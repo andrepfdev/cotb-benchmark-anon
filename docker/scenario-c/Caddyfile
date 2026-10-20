@@ -1,0 +1,24 @@
+{
+    frankenphp {
+        worker {
+            file public/frankenphp-worker.php
+            num {$FRANKENPHP_WORKERS:4}
+        }
+    }
+    order php_server before file_server
+    admin off
+}
+
+:8080 {
+    root * public
+
+    php_server {
+        try_files {path} frankenphp-worker.php
+    }
+
+    file_server
+
+    log {
+        output discard
+    }
+}

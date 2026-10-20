@@ -1,0 +1,5 @@
+php-bench-app-c-1,0.00%,120.8MiB / 512MiB
+php-bench-grafana-1,1.80%,440.3MiB / 14.5GiB
+php-bench-postgres-1,2.42%,49.03MiB / 256MiB
+php-bench-prometheus-1,0.56%,286.9MiB / 14.5GiB
+php-bench-cadvisor-1,4.33%,171.2MiB / 14.5GiB
